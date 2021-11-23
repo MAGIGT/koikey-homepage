@@ -12,8 +12,7 @@ import {
   Icon,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronLeftIcon } from '@chakra-ui/icons'
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronLeftIcon, StarIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -37,7 +36,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, welcome to my website!
+        学 无 止 境
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -45,7 +44,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Tong Maxing
           </Heading>
-          <p>I&apos;m a student in China.</p>
+          <p> I&apos;m a student in China.</p>
         </Box>
         <Box
           flexShrink={0}
@@ -68,26 +67,24 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Profile
+          Passage
         </Heading>
         <Paragraph>
-          简单介绍一下我自己吧，我......
         </Paragraph>
-        <Box align="left" my={4}>
+
+         <Stack spacing="99" direction="row" justify="center" my={4}>    
           <NextLink href="/works">
             <Button rightIcon={<ChevronLeftIcon />} colorScheme="teal">
               原创文章
             </Button>
           </NextLink>
-        </Box>
-        <Box align="right" my={4}>
+       
           <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronLeftIcon />} colorScheme="teal">
               其他文章
             </Button>
           </NextLink>
-        </Box>
-
+          </Stack>        
       </Section>
 
       <Section delay={0.2}>
@@ -96,11 +93,15 @@ const Home = () => (
         </Heading>
         <BioSection>
           <BioYear>2001</BioYear>
-          Born in Fujian (福建), China.
+          出生于福建省
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
           开始大学生活
+        </BioSection>
+        <BioSection>
+          <BioYear>~ ~</BioYear>
+          就这样吧，没什么特别的个人经历。
         </BioSection>
       </Section>
 
@@ -134,7 +135,7 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoQQ} />}
+                leftIcon={<Icon as={StarIcon} />}
               >
                 QQ
               </Button>
@@ -169,7 +170,19 @@ const Home = () => (
             扫一扫或搜一搜关注我吧！
           </GridItem>
         </SimpleGrid>
+      </Section>
 
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          About
+        </Heading>
+        <Paragraph>
+        本站资源声明: 1.本文部分内容转载自其它媒体，但并不代表本站赞同其观点和对其真实性负责。
+        2.若您需要商业运营或用于其他商业活动，请您购买正版授权并合法使用。
+        3.如果本站有侵犯、不妥之处的资源，请在网站最下方联系我们。将会第一时间解决！
+        4.本站所有资源均由互联网收集整理、网友上传以及本人制作，仅供大家参考、学习，不存在任何商业目的与商业用途。
+        5.本站提供的所有资源仅供参考学习使用，版权归原著所有，禁止下载本站资源参与商业和非法行为，请在24小时之内自行删除!
+        </Paragraph>
       </Section>
     </Container>
   </Layout>
