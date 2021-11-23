@@ -19,13 +19,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import {
-  IoLogoTwitter,
-  IoLogoInstagram,
+  IoLogoQQ,
   IoLogoGithub,
-  IoLogoDiscord
+  IoLogoWechat
 } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbYOULIAN from '../public/images/links/YOULIAN.png'
+import thumbWXGZH from '../public/images/links/WXGZH.png'
 
 const Home = () => (
   <Layout>
@@ -37,7 +36,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a student in China!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -60,7 +59,7 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/my.jpg"
             alt="Profile image"
           />
         </Box>
@@ -68,24 +67,15 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Profile
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop">
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+          Nothing to say.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              My Blog
             </Button>
           </NextLink>
         </Box>
@@ -100,16 +90,8 @@ const Home = () => (
           Born in Fujian (福建), China.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Nothing
-        </BioSection>
-        <BioSection>
           <BioYear>2019</BioYear>
-          college life
-        </BioSection>
-        <BioSection>
-          <BioYear>present</BioYear>
-          a student
+          Campus life
         </BioSection>
       </Section>
 
@@ -118,94 +100,64 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Art,Drawing
         </Paragraph>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Find me
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/MAGIGT" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
+                Github
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://qm.qq.com/cgi-bin/qm/qr?k=xLkAUUJ2bhRmf-Ap3LJ-z8TdGX1yGMhD&noverify=0" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
+                leftIcon={<Icon as={IoLogoQQ} />}
               >
-                @inkdrop_app
+                QQ
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://u.wechat.com/MEmwfVrMvdOff0XG3kO9y0c" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
+                leftIcon={<Icon as={IoLogoWechat} />}
               >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://discord.gg/QfsG5Kj" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoDiscord} />}
-              >
-                Discord
+                Wechat
               </Button>
             </Link>
           </ListItem>
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+        <GridItem
+            href="https://lhqweb.online/"
+            title="友链"
+            thumbnail={thumbYOULIAN}
           >
-            My YouTube channel
+            seemH 的主页
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="http://weixin.qq.com/r/MxMUDE3EmRDmrQlv90Yh"
+            title="欢迎关注微信公众号"
+            thumbnail={thumbWXGZH}
           >
-            A Markdown note-taking app
+            让我们网上冲浪吧
           </GridItem>
         </SimpleGrid>
 
