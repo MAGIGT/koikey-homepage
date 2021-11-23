@@ -12,6 +12,7 @@ import {
   Icon,
   useColorModeValue
 } from '@chakra-ui/react'
+import { ChevronLeftIcon } from '@chakra-ui/icons'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -36,7 +37,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a student in China!
+        Hello, welcome to my website!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -44,7 +45,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Tong Maxing
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>I&apos;m a student in China.</p>
         </Box>
         <Box
           flexShrink={0}
@@ -70,15 +71,23 @@ const Home = () => (
           Profile
         </Heading>
         <Paragraph>
-          Nothing to say.
+          简单介绍一下我自己吧，我......
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box align="left" my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Blog
+            <Button rightIcon={<ChevronLeftIcon />} colorScheme="teal">
+              原创文章
             </Button>
           </NextLink>
         </Box>
+        <Box align="right" my={4}>
+          <NextLink href="/posts">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              其他文章
+            </Button>
+          </NextLink>
+        </Box>
+
       </Section>
 
       <Section delay={0.2}>
@@ -91,7 +100,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          Campus life
+          开始大学生活
         </BioSection>
       </Section>
 
@@ -100,7 +109,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art,Drawing
+          搜集信息，处理数据
         </Paragraph>
       </Section>
 
@@ -147,27 +156,20 @@ const Home = () => (
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
         <GridItem
             href="https://lhqweb.online/"
-            title="友链"
+            title="友 人 帐"
             thumbnail={thumbYOULIAN}
           >
-            seemH 的主页
+            快来看看 seemH 的主页~
           </GridItem>
           <GridItem
             href="http://weixin.qq.com/r/MxMUDE3EmRDmrQlv90Yh"
-            title="欢迎关注微信公众号"
+            title="公 众 号"
             thumbnail={thumbWXGZH}
           >
-            让我们网上冲浪吧
+            扫一扫或搜一搜关注我吧！
           </GridItem>
         </SimpleGrid>
 
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>

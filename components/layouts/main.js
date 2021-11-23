@@ -15,7 +15,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Takuya's homepage" />
+        <meta name="description" content="Tong Maxing's homepage" />
         <meta name="author" content="Takuya Matsuyama" />
         <meta name="author" content="craftzdog" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -27,7 +27,7 @@ const Main = ({ children, router }) => {
         <meta property="og:site_name" content="Tong Maxing's Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
-        <title>Takuya Matsuyama - Homepage</title>
+        <title>koikey</title>
       </Head>
 
       <NavBar path={router.asPath} />

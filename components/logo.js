@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            www.Koikey.top
+            www.koikey.top
           </Text>
         </LogoBox>
       </a>
