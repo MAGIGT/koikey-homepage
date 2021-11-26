@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
 import {
   Link,
+  Text,
   Container,
   Heading,
   Box,
@@ -13,7 +14,7 @@ import {
   Stack,
   useColorModeValue
 } from '@chakra-ui/react'
-import { ChevronLeftIcon, StarIcon} from '@chakra-ui/icons'
+import { StarIcon,ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
@@ -70,38 +71,43 @@ const Home = () => (
           Passage
         </Heading>
         <Paragraph>
+          ☟
         </Paragraph>
 
-         <Stack spacing="99" direction="row" justify="center" my={4}>    
+         <Stack spacing="108" direction="row" justify="center" my={4}>    
           <NextLink href="/works">
-            <Button rightIcon={<ChevronLeftIcon />} colorScheme="teal">
+            <Button leftIcon={<ChevronLeftIcon/>} rightIcon={<ChevronRightIcon/>} colorScheme="teal">
               原创文章
             </Button>
           </NextLink>
        
           <NextLink href="/posts">
-            <Button rightIcon={<ChevronLeftIcon />} colorScheme="teal">
+            <Button leftIcon={<ChevronLeftIcon/>} rightIcon={<ChevronRightIcon/>} colorScheme="teal">
               其他文章
             </Button>
           </NextLink>
           </Stack>        
       </Section>
 
-      <Section delay={0.2}>
+      <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
           <BioYear>2001</BioYear>
-          出生于福建省
+          Born in FuJian (福建), China
+        </BioSection>
+        <BioSection>
+          <BioYear>2016</BioYear>
+          Have my first smartphone 
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          开始大学生活
+          Start college life
         </BioSection>
         <BioSection>
-          <BioYear>~ ~</BioYear>
-          就这样吧，没什么特别的个人经历。
+          <BioYear>2021 to present</BioYear>
+          Works as a freelance
         </BioSection>
       </Section>
 
@@ -110,8 +116,13 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          搜集信息，处理数据
-        </Paragraph>
+        Art, Music, Drawing
+          , DIY,{' '}
+          <Link href="https://url.cloud.huawei.com/eBld1H10Qw" target="_blank">
+            Photography
+          </Link>
+          , Python, Machine Learning …
+        </Paragraph> 
       </Section>
 
       <Section delay={0.3}>
@@ -176,13 +187,14 @@ const Home = () => (
         <Heading as="h3" variant="section-title">
           About
         </Heading>
-        <Paragraph>
-        本站资源声明: 1.本文部分内容转载自其它媒体，但并不代表本站赞同其观点和对其真实性负责。
+        <Stack spacing={3}>
+        <Text fontSize="xs">本站资源声明: 1.本文部分内容转载自其它媒体，但并不代表本站赞同其观点和对其真实性负责。
         2.若您需要商业运营或用于其他商业活动，请您购买正版授权并合法使用。
         3.如果本站有侵犯、不妥之处的资源，请在网站最下方联系我们。将会第一时间解决！
         4.本站所有资源均由互联网收集整理、网友上传以及本人制作，仅供大家参考、学习，不存在任何商业目的与商业用途。
         5.本站提供的所有资源仅供参考学习使用，版权归原著所有，禁止下载本站资源参与商业和非法行为，请在24小时之内自行删除!
-        </Paragraph>
+        </Text>
+        </Stack>
       </Section>
     </Container>
   </Layout>
