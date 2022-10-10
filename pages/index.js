@@ -99,7 +99,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2016</BioYear>
-          Have my first smartphone 
+          *****
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
