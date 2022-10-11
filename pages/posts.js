@@ -9,7 +9,7 @@ import thumbc from '../public/images/contents/c.png'
 import thumbd from '../public/images/contents/d.png'
 
 const Posts = () => (
-  <Layout title="Posts">
+  <Layout title="其他">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
         其 他 文 章

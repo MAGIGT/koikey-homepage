@@ -1,31 +1,40 @@
 import NextLink from 'next/link'
 import {
-  Link,
-  Text,
-  Container,
-  Heading,
-  Box,
-  Image,
-  SimpleGrid,
-  Button,
-  List,
-  ListItem,
-  Icon,
-  Stack,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { StarIcon,ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import {
   IoLogoGithub,
   IoLogoWechat
 } from 'react-icons/io5'
-import thumbYOULIAN from '../public/images/links/YOULIAN.png'
+
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  StarIcon
+} from '@chakra-ui/icons'
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Icon,
+  Image,
+  Link,
+  List,
+  ListItem,
+  SimpleGrid,
+  Stack,
+  Text,
+  useColorModeValue
+} from '@chakra-ui/react'
+
+import {
+  BioSection,
+  BioYear
+} from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import Layout from '../components/layouts/article'
+import Paragraph from '../components/paragraph'
+import Section from '../components/section'
 import thumbWXGZH from '../public/images/links/WXGZH.png'
+import thumbYOULIAN from '../public/images/links/YOULIAN.png'
 
 const Home = () => (
   <Layout>
@@ -37,7 +46,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        学 无 止 境
+        学 无 止 境 
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -99,7 +108,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2016</BioYear>
-          Have my first smartphone 
+        
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
