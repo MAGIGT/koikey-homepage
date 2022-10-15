@@ -46,7 +46,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        学 无 止 境 
+        学  无  止  境 
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -109,7 +109,7 @@ const Home = () => (
         <BioSection>
           <BioYear>2016</BioYear>
         </BioSection>
-          111
+          
         <BioSection>
           <BioYear>2019</BioYear>
           Start college life
