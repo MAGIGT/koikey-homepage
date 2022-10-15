@@ -109,7 +109,7 @@ const Home = () => (
         <BioSection>
           <BioYear>2016</BioYear>
         </BioSection>
-          1
+          ...
         <BioSection>
           <BioYear>2019</BioYear>
           Start college life
