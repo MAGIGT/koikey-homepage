@@ -55,7 +55,7 @@ const Home = () => (
             Tong Maxing
           </Heading>
           <p> I&apos;m a student in China.</p>
-        </Box>
+        </Box> 
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -109,7 +109,7 @@ const Home = () => (
         <BioSection>
           <BioYear>2016</BioYear>
         </BioSection>
-          
+          1
         <BioSection>
           <BioYear>2019</BioYear>
           Start college life
