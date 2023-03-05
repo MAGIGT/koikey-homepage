@@ -21,7 +21,6 @@ import {
   ListItem,
   SimpleGrid,
   Stack,
-  Text,
   useColorModeValue
 } from '@chakra-ui/react'
 
