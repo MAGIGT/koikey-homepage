@@ -11,13 +11,13 @@ import { Title, Meta } from '../../components/more'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="GrammarNote">
+  <Layout title="about">
     <Container>
       <Title>
-      GrammarNote <Badge>2021-present</Badge>
+      about <Badge>2021-present</Badge>
       </Title>
       <P>
-        
+        xz
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -25,7 +25,7 @@ const Work = () => (
           <span>Notion</span>
         </ListItem>
         <ListItem>
-          <Meta>post</Meta>
+          <Meta>work</Meta>
           <Link href="https://www.notion.so/ENGLISH-LEARNING-a513d20c4b7940b791e068c80e6054c4">
             Notion 笔记本{' '}
             <ExternalLinkIcon mx="2px" />

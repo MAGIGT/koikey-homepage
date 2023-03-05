@@ -8,11 +8,11 @@ import thumbb from '../public/images/contents/b.png'
 import thumbc from '../public/images/contents/c.png'
 import thumbd from '../public/images/contents/d.png'
 
-const Posts = () => (
-  <Layout title="其他">
+const others = () => (
+  <Layout title="其他㇑">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        其 他 文 章
+        OTHERS
       <Divider my={6} />
       </Heading>
 
@@ -50,4 +50,4 @@ const Posts = () => (
   </Layout>
 )
 
-export default Posts
+export default others

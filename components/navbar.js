@@ -70,10 +70,13 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            原 创
+          <LinkItem href="/" path={path}>
+            主 页
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="/articles" path={path}>
+            文 章
+          </LinkItem>
+          <LinkItem href="/others" path={path}>
             其 他
           </LinkItem>
           <LinkItem
@@ -86,6 +89,9 @@ const Navbar = props => {
             pl={2}
           >
             搜 索
+          </LinkItem>
+          <LinkItem href="/more" path={path}>
+            更 多
           </LinkItem>
         </Stack>
 
@@ -102,12 +108,12 @@ const Navbar = props => {
               />
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>首 页</MenuItem>
+                  <MenuItem as={Link}>主 页</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>原 创</MenuItem>
+                <NextLink href="/aticles" passHref>
+                  <MenuItem as={Link}>文 章</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink href="/others" passHref>
                   <MenuItem as={Link}>其 他</MenuItem>
                 </NextLink>
                 <MenuItem
@@ -116,6 +122,9 @@ const Navbar = props => {
                 >
                   搜 索
                 </MenuItem>
+                <NextLink href="/more" passHref>
+                  <MenuItem as={Link}>更 多</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>

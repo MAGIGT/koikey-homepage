@@ -46,15 +46,17 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        学  无  止  境 
+        学ㅤ无ㅤ止ㅤ境 
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Tong Maxing
+            <Text bgGradient='linear(to-l, #7928CA, #FF0080)' bgClip='text' fontSize='4xl' fontWeight='extrabold'>
+             I&apos;m Tong Maxing
+            </Text>
           </Heading>
-          <p> I&apos;m a student in China.</p>
+          <p>Student / Web Developer / Blogger</p>
         </Box> 
         <Box
           flexShrink={0}
@@ -84,15 +86,15 @@ const Home = () => (
         </Paragraph>
 
          <Stack spacing="108" direction="row" justify="center" my={4}>    
-          <NextLink href="/works">
+          <NextLink href="/articles">
             <Button leftIcon={<ChevronLeftIcon/>} rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-              原创文章
+              ARTICLES
             </Button>
           </NextLink>
        
-          <NextLink href="/posts">
+          <NextLink href="/others">
             <Button leftIcon={<ChevronLeftIcon/>} rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-              其他文章
+              OTHERS
             </Button>
           </NextLink>
           </Stack>        
@@ -107,16 +109,12 @@ const Home = () => (
           Born in FuJian (福建), China
         </BioSection>
         <BioSection>
-          <BioYear>2016</BioYear>
-        </BioSection>
-          ...
-        <BioSection>
           <BioYear>2019</BioYear>
           Start college life
         </BioSection>
         <BioSection>
-          <BioYear>2021 to present</BioYear>
-          Works as a freelance
+          <BioYear>2022 to present</BioYear>
+          Working as a freelancer
         </BioSection>
       </Section>
 
@@ -125,7 +123,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-        Art, Music, Drawing
+        Art, Drawing
           , DIY,{' '}
           <Link href="https://url.cloud.huawei.com/eBld1H10Qw" target="_blank">
             Photography
@@ -149,8 +147,6 @@ const Home = () => (
                 Github
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
             <Link href="https://qm.qq.com/cgi-bin/qm/qr?k=xLkAUUJ2bhRmf-Ap3LJ-z8TdGX1yGMhD&noverify=0" target="_blank">
               <Button
                 variant="ghost"
@@ -160,8 +156,6 @@ const Home = () => (
                 QQ
               </Button>
             </Link>
-          </ListItem>
-          <ListItem>
             <Link href="https://u.wechat.com/MEmwfVrMvdOff0XG3kO9y0c" target="_blank">
               <Button
                 variant="ghost"
@@ -172,19 +166,23 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
+          
+          <ListItem>
+            
+          </ListItem>
         </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
         <GridItem
             href="https://lhqweb.online/"
-            title="友 人 帐"
+            title="     "
             thumbnail={thumbYOULIAN}
           >
             快来看看 seemH 的主页~
           </GridItem>
           <GridItem
             href="http://weixin.qq.com/r/MxMUDE3EmRDmrQlv90Yh"
-            title="公 众 号"
+            title="     "
             thumbnail={thumbWXGZH}
           >
             扫一扫或搜一搜关注我吧！
@@ -192,19 +190,6 @@ const Home = () => (
         </SimpleGrid>
       </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          About
-        </Heading>
-        <Stack spacing={3}>
-        <Text fontSize="xs">本站资源声明: 1.本文部分内容转载自其它媒体，但并不代表本站赞同其观点和对其真实性负责。
-        2.若您需要商业运营或用于其他商业活动，请您购买正版授权并合法使用。
-        3.如果本站有侵犯、不妥之处的资源，请在网站最下方联系我们。将会第一时间解决！
-        4.本站所有资源均由互联网收集整理、网友上传以及本人制作，仅供大家参考、学习，不存在任何商业目的与商业用途。
-        5.本站提供的所有资源仅供参考学习使用，版权归原著所有，禁止下载本站资源参与商业和非法行为，请在24小时之内自行删除!
-        </Text>
-        </Stack>
-      </Section>
     </Container>
   </Layout>
 )
