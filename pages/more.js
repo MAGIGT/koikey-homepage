@@ -2,7 +2,6 @@ import { Container, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import thumbGrammarNote from '../public/images/works/GrammarNote.png'
 import thumbabout from '../public/images/works/about.png'
 
 const more = () => (
