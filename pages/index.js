@@ -9,20 +9,8 @@ import {
   ChevronRightIcon,
   StarIcon
 } from '@chakra-ui/icons'
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Icon,
-  Image,
-  Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  Stack,
-  Text,
-  useColorModeValue
+import {Box, Button, Container, Heading, Icon, Image, Link, List, ListItem, 
+  SimpleGrid, Stack, Text, useColorModeValue
 } from '@chakra-ui/react'
 
 import {
@@ -171,6 +159,10 @@ const Home = () => (
             
           </ListItem>
         </List>
+
+        <Heading as="h3" variant="section-title">
+          Promotion
+        </Heading>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
         <GridItem

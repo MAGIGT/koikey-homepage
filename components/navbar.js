@@ -110,7 +110,7 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>主 页</MenuItem>
                 </NextLink>
-                <NextLink href="/aticles" passHref>
+                <NextLink href="/articles" passHref>
                   <MenuItem as={Link}>文 章</MenuItem>
                 </NextLink>
                 <NextLink href="/others" passHref>

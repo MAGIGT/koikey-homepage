@@ -10,13 +10,6 @@ const more = () => (
     <Container>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem
-            id="GrammarNote"
-            title="图片集"
-            thumbnail={thumbGrammarNote}> 
-          </WorkGridItem>
-        </Section>
 
         <Section>
           <WorkGridItem
