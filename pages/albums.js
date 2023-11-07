@@ -10,13 +10,13 @@ const albums = () => (
       </Heading> 
 
       <Stack spacing="2" direction="row" justify="center" my={2}>    
-        <Image src='images/contents/2335c.jpg'  alt='Dan Abramov' />
-        <Image src='images/contents/2335b.jpg'  alt='Dan Abramov' />
+        <Image src='images/contents/2335c.jpg'  /> 
+        <Image src='images/contents/2335b.jpg'  />
       </Stack>
       
       <Stack spacing="2" direction="row" justify="center" my={2}>    
-        <Image src='images/contents/2335a.jpg'  alt='Dan Abramov' />
-        <Image src='images/contents/2335d.jpg'  alt='Dan Abramov' />
+        <Image src='images/contents/2335a.jpg'   />
+        <Image src='images/contents/2335d.jpg'   />
       </Stack>
 
     </Container>
