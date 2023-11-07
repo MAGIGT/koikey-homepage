@@ -80,9 +80,9 @@ const Home = () => (
             </Button>
           </NextLink>
        
-          <NextLink href="/others">
+          <NextLink href="/more">
             <Button leftIcon={<ChevronLeftIcon/>} rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-              OTHERS
+              M O R E
             </Button>
           </NextLink>
           </Stack>        

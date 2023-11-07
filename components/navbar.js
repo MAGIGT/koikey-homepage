@@ -76,12 +76,12 @@ const Navbar = props => {
           <LinkItem href="/articles" path={path}>
             文 章
           </LinkItem>
-          <LinkItem href="/others" path={path}>
-            其 他
+          <LinkItem href="/albums" path={path}>
+            相 册
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://www.baidu.com"
+            href="https://www.bing.com"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -113,12 +113,12 @@ const Navbar = props => {
                 <NextLink href="/articles" passHref>
                   <MenuItem as={Link}>文 章</MenuItem>
                 </NextLink>
-                <NextLink href="/others" passHref>
-                  <MenuItem as={Link}>其 他</MenuItem>
+                <NextLink href="/albums" passHref>
+                  <MenuItem as={Link}>相 册</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://www.baidu.com"
+                  href="https://www.bing.com"
                 >
                   搜 索
                 </MenuItem>
